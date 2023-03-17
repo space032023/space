@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>SPAce - A Capstone Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdn.rawgit.com/webslides/WebSlides/f6ac2400/static/css/base.css'>
+  <!-- <link rel='stylesheet' href='https://cdn.rawgit.com/webslides/WebSlides/f6ac2400/static/css/colors.css'> -->
+  <!-- <link rel='stylesheet' href='https://cdn.rawgit.com/webslides/WebSlides/f6ac2400/static/css/svg-icons.css'> -->
+  <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    /> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Include the Bootstrap JavaScript library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js" integrity="sha512-WZBMi79D8lCgVY1OMlxkrgwBQO/FZtqLRZQz87O9S0G/o1pIgSt+WEMjjd4MH4iL4tmmWm69FezudZroX9p9zg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script  src="./index.js"></script>
+  <link rel='stylesheet' href='navbar.css'>
+
+  <script>
+    $(document).ready(function() {
+      $('.dropdown-toggle').dropdown();
+    });
+
+   
+    // function myFunction() {
+    //   var popup = document.getElementById("myPopup");
+    //   popup.classList.toggle("show");
+    // }
+
+    function togglePopup(popupId) {
+      var popup = document.getElementById(popupId);
+      popup.classList.toggle("show");
+    }
+
+
+
+
+  </script>
+</head>
+<body>
+
+  <header>
+    <nav class="nav">
+        <div class="container">
+            
+              <a class="navbar-brand" id="logo" href="index.html#slide=1"><img src="img/logowithcircle.png"
+                style="height: auto; width: 80px; padding-bottom: 5px; padding-top: 4px; text-align:left" /></a>
+            
+            
+                
+            
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks" id="whitetext">
+                  
+                  <li style="font-size: xx-large; text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);" class="text-shadow"><a href="index.html#slide=1">Home</a></li>
+                  
+                  <li style="font-size: xx-large; text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);" class="text-shadow"><a href="index.html#slide=2">Concept/Background</a></li>
+
+                    <li style="font-size: xx-large; text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);" class="text-shadow"><a href="index.html#slide=4">What we do</a></li>
+                    <li style="font-size: xx-large; text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);" class="text-shadow"><a href="index.html#slide=5l">How it works</a></li>
+                    <li style="font-size: xx-large; text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);" class="text-shadow"><a href="index.html#slide=10">Wireframe</a></li>
+                    <li style="font-size: xx-large; text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);" class="text-shadow"><a href="index.html#slide=14">Sitemap</a></li>
+                    <li style="font-size: xx-large; text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);" class="text-shadow"><a href="index.html#slide=17">Technologies used</a></li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="/logout">Logout</a>
+                      </li> -->
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+</header>
+
+<!-- partial:index.partial.html -->
+<article id="webslides">
+
+      <section class="content aligncenter ">
+        <video src="img/spashort.mp4" autoplay loop muted></video>
+        <img class="zoomIn" src="img/sitename.png" alt="sitelogo" style="height:auto; width: 50%; text-align:center; display:block; margin:auto"/>
+        <!-- <img class="zoomIn" src="img/groupmembers.png" alt="sitemakers" style="height:auto; width: 40%; text-align:center; display:block; margin:auto"/> -->
+        <ul class="no-bullets" style="list-style-type: none;">
+          
+          <li id="whitetext"  style="font-size: xx-large; text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);" class="goldhover">A Capstone Project Presented By</li>
+          
+          <div class="popup" onclick="togglePopup('popup1')">
+          <li id="whitetext"  style="font-size: xx-large; text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);">Charmaine David</li>
+          <span class="popuptext" id="popup1"><img src="img/Cha.JPG"/> </span>
+        </div> 
+        <div class="popup" onclick="togglePopup('popup2')">
+          <li id="whitetext"  style="font-size: xx-large; text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);"> · Jonas Ricafort</li>
+          <span class="popuptext" id="popup2"><img src="img/client1.jpg"/> </span>
+        </div>
+        <div class="popup" onclick="togglePopup('popup3')">
+          <li id="whitetext"  style="font-size: xx-large; text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);"> · Norman Guevarra</li>
+          <span class="popuptext" id="popup3"><img src="img/client2.jpg"/> </span>
+        </div>
+        <div class="popup" onclick="togglePopup('popup4')">
+          <li id="whitetext"  style="font-size: xx-large; text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);"> · Beloved John Villaflor</li>
+          <span class="popuptext" id="popup4"><img src="img/client4.jpg"/> </span></div>
+        </ul>
+        
+      </section>
+
+      <section id="concept1" class="bg">
+        <div class="wrap">
+          <div class="overlay">
+          <div class="content-left">
+            <h1  id="goldtext">CONCEPT of the PROJECT</h1>
+            <h3 class="text" id="goldtext">Background of the business</h3>
+            <br>
+            <h4  id="whitetext" >Inspired by the convenience and flexibility of the Uber/Grab ride-hailing service, we came up with the idea of creating a spa service that worked in a similar way. 
+            </h4>
+            <br>
+            <h4 id="whitetext" >With the help of technology and a network of skilled and experienced spa professionals, we launched the platform, allowing customers to book a spa treatment on-demand.
+            </h4>
+          </div>
+          </div>
+          <!-- <div class="content-right">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/traffic-lights.png">
+          </div> -->
+        </div>
+      </section>
+
+      <section id="concept" class="bg">
+        <div class="wrap">
+          <div class="overlay">
+          <div class="content-left">
+            <h1  id="goldtext">CONCEPT of the PROJECT</h1>
+            <h3 class="text" id="goldtext">Background of the business</h3>
+            <br>
+            <h4  id="whitetext" >Today, the platform is known as the go-to destination for people who want to relax, rejuvenate, and feel their best, without the hassle of traditional spa bookings. 
+ 
+            </h4>
+            <br>
+            <h4 id="whitetext" >With this innovative approach and commitment to customer satisfaction, SPAce aims to transform the way people think about spa services.
+
+            </h4>
+          </div>
+          </div>
+          <!-- <div class="content-right">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/traffic-lights.png">
+          </div> -->
+        </div>
+      </section>
+
+
+      <section id="whatwedo" class="bg">
+        <div class="wrap">
+          <div class="overlay">
+          <div class="content-left">
+            <h1  id="goldtext">CONCEPT of the PROJECT</h1>
+            <h3 class="text" id="goldtext">What We Do</h3>
+            <br>
+            <h4  id="whitetext" >Bridge the gap between the clients and the specialists via this online gateway to connect them.
+ 
+ 
+            </h4>
+            <br>
+            <h4 id="whitetext" >The clients to be pampered
+              And
+              The specialists to provide their services<br>
+             <span id="goldtext">Whenever, Wherever</span>
+              
+
+            </h4>
+          </div>
+          </div>
+          <!-- <div class="content-right">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/traffic-lights.png">
+          </div> -->
+        </div>
+      </section>
+
+
+
+      <section id="howitworks" class="bg">
+        <div class="wrap">
+          <div class="overlay">
+          <div class="content-left">
+            <h1  id="goldtext">CONCEPT of the PROJECT</h1>
+            <h3 class="text" id="goldtext">How It Works</h3>
+            <br>
+            <ul id="whitetext" style="font-size: 3rem;">
+              <li>Users would access the website through their web browser.
+              </li><br>
+              <li>Users would create an account and input their payment information.
+              </li><br>
+              <li>Users would then be able to browse a variety of spa services, including massages, facials, and other treatments.
+              </li><br>
+              <li>Users would select the service they want, and the app would display the available service providers in their area.
+              </li><br>
+              <li>Users would select their preferred service provider based on factors such as their ratings and availability.
+              </li>
+            </ul>
+          </div>
+          </div>
+          <!-- <div class="content-right">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/traffic-lights.png">
+          </div> -->
+        </div>
+      </section>
+
+      <section id="howitworks2" class="bg">
+        <div class="wrap">
+          <div class="overlay">
+          <div class="content-left">
+            <h1  id="goldtext">CONCEPT of the PROJECT</h1>
+            <h3 class="text" id="goldtext">How It Works</h3>
+            <br>
+            <ul id="whitetext" style="font-size: 3rem;">
+              <li>Users would then be able to book their appointment, including the date, time, and location where they would like the service to be performed.
+              </li><br>
+              <li>The service provider would then receive the booking request and confirm the appointment.
+              </li><br>
+              <li>The service provider would arrive at the specified location to provide the spa service.
+              </li><br>
+              <li>After the service is completed, the user would pay through the app, and they would have the option to rate and provide feedback on the service provider.
+
+              </li><br>
+              
+            </ul>
+            
+          </div>
+          </div>
+          <div class="content-right">
+            <h3 id="whitetext" >Overall, a spa website that works like Uber or Grab would provide users with a convenient and flexible way to access spa services on-demand, without the need for advanced booking or scheduling. This would make it easier for people to relax, de-stress, and take care of their bodies in a way that fits their busy schedules.
+            </h3>
+          </div>
+        </div>
+      </section>
+
+      <section id="whywechose" class="bg">
+        <div class="wrap">
+          <div class="overlay">
+          <div class="content-left">
+            <h1  id="goldtext">CONCEPT of the PROJECT</h1>
+            <h3 class="text" id="goldtext">Why We Chose this Concept</h3>
+            <br>
+            <h4  id="goldtext" >Reduce <span id="whitetext">and</span> Eliminate Expenses
+            </h4><br>
+            <h4  id="goldtext" >Convenience <span id="whitetext"> and </span> Flexibility
+            </h4>
+            <br>
+            <h4  id="whitetext" >To provide an online <span id="goldtext">SPAce</span> where the stressed can find a way to get pampered with various spa related services.
+
+
+            </h4>
+            <h4  id="whitetext" >With it being available online, this would make it easier for people to relax, distress and take care of their bodies in a way that fits their busy schedules.
+
+            </h4>
+            <br>
+            
+            <h4 id="whitetext" >
+              It also helps the specialists get bookings based on their availability without being confined to straight shifts on the usual tenure set-up.
+              <br>
+            
+            </h4>
+          </div>
+          </div>
+          <!-- <div class="content-right">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/traffic-lights.png">
+          </div> -->
+        </div>
+      </section>
+
+      <section id="whywechose" class="bg">
+        <div class="wrap">
+          <div class="overlay">
+          <div class="content-left">
+            <h1  id="goldtext">CONCEPT of the PROJECT</h1>
+            <h3 class="text" id="goldtext">
+            </h3>
+            <br>
+           
+            
+              
+
+            </h4>
+          </div>
+          </div>
+          <!-- <div class="content-right">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/traffic-lights.png">
+          </div> -->
+        </div>
+      </section>
+      
+      <section id="whywechose" class="bg">
+        <div class="wrap">
+          <div class="overlay">
+          <div class="content-left">
+            <h1  id="goldtext">CONCEPT of the PROJECT</h1>
+            <h3 class="text" id="goldtext">Rationale for the color scheme and font choice
+            </h3>
+            <br>
+            <h4  id="whitetext" ><span id="goldtext">GOLD</span> - often associated with luxury; with spa services often viewed as something luxurious
+            </h4>
+            <h4  id="whitetext" ><span id="dbgtext">DARK BLUE GREEN</span> - harmony and prosperity, strong nature-related imagery; blue tint gives off trustworthiness and wisdom
+            </h4>
+            <br>
+            <h4  id="whitetext" ><span id="goldtext">SPA</span><span id="dbgtext">ce</span> strives to be a trustworthy site
+
+              </h4>
+              
+
+            </h4>
+          </div>
+          </div>
+          <!-- <div class="content-right">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/traffic-lights.png">
+          </div> -->
+        </div>
+      </section>
+
+      <section id="wireframe" class="bg">
+        <div class="wrap">
+          <div class="overlay">
+          <div class="content-left">
+            <a href="https://app.moqups.com/4J81A6MZo2bKfeiaHziNLKfA0AM0IGfy/view/page/abef9b45c" target="_blank"><h1  id="goldtext">WIREFRAME</h1></a>
+            
+            <h3 class="text" id="goldtext">version 1
+            </h3>
+            <br>
+            <!-- <h4  id="whitetext" ><span id="goldtext">GOLD</span> - often associated with luxury; with spa services often viewed as something luxurious
+            </h4>
+            <h4  id="whitetext" ><span id="dbgtext">DARK BLUE GREEN</span> - harmony and prosperity, strong nature-related imagery; blue tint gives off trustworthiness and wisdom
+            </h4>
+            <br>
+            <h4  id="whitetext" ><span id="goldtext">SPA</span><span id="dbgtext">ce</span> strives to be a trustworthy site
+
+              </h4>
+              
+
+            </h4> -->
+          </div>
+          </div>
+          <div class="content-right">
+            <img src="img/Light mode.JPG">
+          </div>
+        </div>
+      </section>
+
+      <section id="wireframe" class="bg">
+        <div class="wrap">
+          <div class="overlay">
+          <div class="content-left">
+            <a href="https://app.moqups.com/4J81A6MZo2bKfeiaHziNLKfA0AM0IGfy/view/page/abef9b45c" target="_blank"><h1  id="goldtext">WIREFRAME</h1></a>
+            
+            <h3 class="text" id="goldtext">version 2
+            </h3>
+            <br>
+            <!-- <h4  id="whitetext" ><span id="goldtext">GOLD</span> - often associated with luxury; with spa services often viewed as something luxurious
+            </h4>
+            <h4  id="whitetext" ><span id="dbgtext">DARK BLUE GREEN</span> - harmony and prosperity, strong nature-related imagery; blue tint gives off trustworthiness and wisdom
+            </h4>
+            <br>
+            <h4  id="whitetext" ><span id="goldtext">SPA</span><span id="dbgtext">ce</span> strives to be a trustworthy site
+
+              </h4>
+              
+
+            </h4> -->
+          </div>
+          </div>
+          <div class="content-center mb-5" id="wire">
+            <img src="img/Dark mode.JPG">
+          </div>
+          
+        </div>
+      </section>
+
+      <section id="wireframe" class="bg">
+        <div class="wrap">
+          <div class="overlay">
+          <div class="content-left">
+            <a href="https://app.moqups.com/4J81A6MZo2bKfeiaHziNLKfA0AM0IGfy/view/page/abef9b45c" target="_blank"><h1  id="goldtext">WIREFRAME</h1></a>
+            
+            <h3 class="text" id="goldtext">Dashboard <br>version 1
+            </h3>
+            <br>
+            <!-- <h4  id="whitetext" ><span id="goldtext">GOLD</span> - often associated with luxury; with spa services often viewed as something luxurious
+            </h4>
+            <h4  id="whitetext" ><span id="dbgtext">DARK BLUE GREEN</span> - harmony and prosperity, strong nature-related imagery; blue tint gives off trustworthiness and wisdom
+            </h4>
+            <br>
+            <h4  id="whitetext" ><span id="goldtext">SPA</span><span id="dbgtext">ce</span> strives to be a trustworthy site
+
+              </h4>
+              
+
+            </h4> -->
+          </div>
+          </div>
+          <div class="content-right mb-5" id="wire2">
+            <img src="img/Dashboard.JPG">
+          </div>
+          
+        </div>
+      </section>
+
+      <section id="wireframe" class="bg">
+        <div class="wrap">
+          <div class="overlay">
+          <div class="content-left">
+            <a href="https://app.moqups.com/4J81A6MZo2bKfeiaHziNLKfA0AM0IGfy/view/page/abef9b45c" target="_blank"><h1  id="goldtext">WIREFRAME</h1></a>
+            
+            <h3 class="text" id="goldtext">Dashboard <br>version 2
+            </h3>
+            <br>
+            <!-- <h4  id="whitetext" ><span id="goldtext">GOLD</span> - often associated with luxury; with spa services often viewed as something luxurious
+            </h4>
+            <h4  id="whitetext" ><span id="dbgtext">DARK BLUE GREEN</span> - harmony and prosperity, strong nature-related imagery; blue tint gives off trustworthiness and wisdom
+            </h4>
+            <br>
+            <h4  id="whitetext" ><span id="goldtext">SPA</span><span id="dbgtext">ce</span> strives to be a trustworthy site
+
+              </h4>
+              
+
+            </h4> -->
+          </div>
+          </div>
+          <div class="content-right mb-5" id="wire2">
+            <img src="img/Dashboard_Norman.JPG">
+          </div>
+          
+        </div>
+      </section>
+
+      <section id="wireframe" class="bg">
+        <div class="wrap">
+          <div class="overlay">
+          <div class="content-left">
+            <a href="https://app.moqups.com/4J81A6MZo2bKfeiaHziNLKfA0AM0IGfy/view/page/abef9b45c" target="_blank"><h1  id="goldtext">SITEMAP</h1></a>
+            
+            <h3 class="text" id="goldtext">First<br>version
+            </h3>
+            <br>
+            <!-- <h4  id="whitetext" ><span id="goldtext">GOLD</span> - often associated with luxury; with spa services often viewed as something luxurious
+            </h4>
+            <h4  id="whitetext" ><span id="dbgtext">DARK BLUE GREEN</span> - harmony and prosperity, strong nature-related imagery; blue tint gives off trustworthiness and wisdom
+            </h4>
+            <br>
+            <h4  id="whitetext" ><span id="goldtext">SPA</span><span id="dbgtext">ce</span> strives to be a trustworthy site
+
+              </h4>
+              
+
+            </h4> -->
+          </div>
+          </div>
+          <div class="content-right mb-5" id="wire3">
+            <img src="img/sitemap.png">
+          </div>
+          
+        </div>
+      </section>
+
+      <section id="wireframe" class="bg">
+        <div class="wrap">
+          <div class="overlay">
+          <div class="content-left">
+            <a href="https://app.moqups.com/4J81A6MZo2bKfeiaHziNLKfA0AM0IGfy/view/page/abef9b45c" target="_blank"><h1  id="goldtext">SITEMAP</h1></a>
+            
+            <h3 class="text" id="whitetext">TIME<br><span id="goldtext">LINE</span>
+            </h3>
+            <br>
+            <!-- <h4  id="whitetext" ><span id="goldtext">GOLD</span> - often associated with luxury; with spa services often viewed as something luxurious
+            </h4>
+            <h4  id="whitetext" ><span id="dbgtext">DARK BLUE GREEN</span> - harmony and prosperity, strong nature-related imagery; blue tint gives off trustworthiness and wisdom
+            </h4>
+            <br>
+            <h4  id="whitetext" ><span id="goldtext">SPA</span><span id="dbgtext">ce</span> strives to be a trustworthy site
+
+              </h4>
+              
+
+            </h4> -->
+          </div>
+          </div>
+          <div class="content-right mb-5" id="wire3">
+            <img src="img/timeline.png">
+          </div>
+          
+        </div>
+      </section>
+
+      <section id="wireframe" class="bg">
+        <div class="wrap">
+          <div class="overlay">
+          <div class="content-left">
+            <a href="https://app.moqups.com/4J81A6MZo2bKfeiaHziNLKfA0AM0IGfy/view/page/abef9b45c" target="_blank"><h1  id="goldtext">RESOURCES USED</h1></a>
+            
+            <h3 class="text" id="whitetext">Minutes of the meetings<br>
+            </h3>
+            <br>
+            <!-- <h4  id="whitetext" ><span id="goldtext">GOLD</span> - often associated with luxury; with spa services often viewed as something luxurious
+            </h4>
+            <h4  id="whitetext" ><span id="dbgtext">DARK BLUE GREEN</span> - harmony and prosperity, strong nature-related imagery; blue tint gives off trustworthiness and wisdom
+            </h4>
+            <br>
+            <h4  id="whitetext" ><span id="goldtext">SPA</span><span id="dbgtext">ce</span> strives to be a trustworthy site
+
+              </h4>
+              
+
+            </h4> -->
+          </div>
+          </div>
+          <div class="content-right mb-5" id="wire3">
+            <img src="img/minutes.JPG">
+          </div>
+          
+        </div>
+      </section>
+      
+
+      <section id="whatwedo" class="bg">
+        <div class="wrap">
+          <div class="overlay">
+          <div class="content-left">
+            <h1  id="goldtext">TECHNOLOGIES USED</h1>
+            <!-- <h3 class="text" id="goldtext">What We Do</h3>
+            <br> -->
+            <!-- <h4  id="whitetext" >Bridge the gap between the clients and the specialists via this online gateway to connect them.
+            </h4> -->
+            <br>
+            <ul>
+              <li id="whitetext" style="font-size: 4rem; padding-bottom: 2rem;">HTML</li>
+              <li id="whitetext" style="font-size: 4rem; padding-bottom: 2rem;">CSS</li>
+              <li id="whitetext" style="font-size: 4rem; padding-bottom: 2rem;">JavaScript</li>
+              <li id="whitetext" style="font-size: 4rem; padding-bottom: 2rem;">jQuery</li>
+              <li id="whitetext" style="font-size: 4rem; padding-bottom: 2rem;">Bootstrap</li>
+              <li id="whitetext" style="font-size: 4rem; padding-bottom: 2rem;">Laravel</li>
+              <li id="whitetext" style="font-size: 4rem; padding-bottom: 2rem;">PHP</li>
+              <li id="whitetext" style="font-size: 4rem; padding-bottom: 2rem;">SQL</li>
+              
+            </ul>
+              
+
+           
+          </div>
+          </div>
+          <div class="content-right">
+            <ul><br><br>
+              <li id="whitetext" style="font-size: 4rem; padding-bottom: 2rem;">GitHub</li>
+              <li id="whitetext" style="font-size: 4rem; padding-bottom: 2rem;">Adobe Photoshop</li>
+              <li id="whitetext" style="font-size: 4rem; padding-bottom: 2rem;">MoQups</li>
+              <li id="whitetext" style="font-size: 4rem; padding-bottom: 2rem;">w3schools</li>
+              <li id="whitetext" style="font-size: 4rem; padding-bottom: 2rem;">DaFont.com</li>
+              <li id="whitetext" style="font-size: 4rem; padding-bottom: 2rem;">Google Drive</li>
+              <li id="whitetext" style="font-size: 4rem; padding-bottom: 2rem;">Codepen.io</li>
+              
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="whywechose" class="bg">
+        <div class="wrap">
+          <div class="overlay">
+          <div class="content-left">
+            <h1  id="goldtext">THANK YOU</h1>
+            <h3 class="text" id="goldtext">
+            </h3>
+            <br>
+            <h4  id="goldtext" >THE <span id="whitetext">WEB</span>SITE
+            </h4>
+            <a href="#" target="_blank"><h4  id="goldtext" >SPA<span id="whitetext">ce</span>.com
+            </h4></a>
+              
+
+            </h4>
+          </div>
+          </div>
+          <!-- <div class="content-right">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/traffic-lights.png">
+          </div> -->
+        </div>
+      </section>
+
+      <section class="zoomIn bg-black">
+        <span class="background" style="background-image:url('https://source.unsplash.com/fPkvU7RDmCo/800x600')"></span>
+        <div class="wrap">
+          <h2 class="aligncenter">Start Coding SVG Today!</h2>
+        </div>
+      </section>
+
+    </article>
+<!-- partial -->
+<script src='https://cdn.rawgit.com/webslides/WebSlides/f6ac2400/static/js/webslides.min.js'></script>
+<script src='https://cdn.rawgit.com/webslides/WebSlides/f6ac2400/static/js/svg-icons.js'></script>
+<script  src="./script.js"></script>
+
+</body>
+</html>
